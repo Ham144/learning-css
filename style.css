@@ -1,0 +1,363 @@
+:root{
+    --maincolor: rgb(255, 119, 0);
+    --primarycolor: rgb(140, 7, 91);
+}
+
+button{
+    padding: 10px;
+    background-color: var(--maincolor);
+    border: none;
+    cursor: pointer;
+    border-radius: 20% 20% 0 0;
+}
+button:hover{
+    transform: scale(1.2);
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+body{
+    background: #1a1919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation Start */
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(11,10 green, 34);
+    font-family: sans-serif;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+}
+nav li{
+    display: inline;
+}
+nav:hover{
+    border-bottom: 1px dotted white;
+    margin-bottom: -0.2px;
+}
+li a{
+    margin-left: 40px;
+    padding-bottom: 3px;
+}
+
+ li a:hover{
+    border-bottom: 2px dashed red;
+    transition: 1s linear;
+    padding-bottom: 10px;
+ }
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+ h1.uppertext, h1.belowtext{
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-align: center;
+ }
+ div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transform: scale(1.3);
+ }
+ img.masjidimg{
+    border: 2px solid var(--maincolor);
+    border-radius: 75%;
+    width: 60%;
+    cursor: pointer;
+ }
+img.masjidimg:hover{
+    filter: brightness(60%);
+    transition: 1s ease-out;
+}
+
+ button.btnVisitUs{
+    position:absolute;
+ }
+
+
+ #our-history{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 10% 4% 10% 4% ;
+ }
+ .img2{
+    width: 50vh;
+    height: 40vh;
+    border-radius: 10%;
+    background: url(contoh\ masjid.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid var(--maincolor);
+ }
+ .title-style{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-content: end;
+    width: 20px;
+    gap:20px
+    
+ }
+ .title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    text-align: start;
+ }
+ .line{
+    width: 230px;
+    height: 4px;
+    background-color: rgb(53, 131, 199);
+    background: white;
+ }
+.section-content{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+    transform: translateX(50%);
+}
+
+
+
+ .section-content p {
+    max-width: 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 20px;
+    margin: 20px 0;
+ }
+
+ section#products{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    margin-top: 10rem;
+ }
+ section h1.title-product{
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateY(-130px);
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    height: 50vh;
+    flex-wrap: wrap;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed var(--maincolor);
+    width: 250px;
+    height: 300px;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 13rem; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-title{
+    align-self: flex-start;
+    transform: translateX(30px);
+}
+
+
+
+.card-img{
+    background: url(contoh\ masjid.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 30%;
+    height: 20%;
+    border-radius: 50%;
+    transform: translateY(-80%);
+}
+div.items{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-self: start;
+    transform: translateX(2rem);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: start;
+    align-items: center;
+    margin-top: 4rem;
+}
+section.section-footer{
+    flex-wrap: wrap;
+    display: flex;
+
+    flex-direction: column;
+}
+
+.footer-info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: small;
+    height: 290px;
+}
+.footer-info{
+    position: relative;
+    display: flex;
+    margin: 20px 50px;
+    flex-direction: column;
+    width: 240px;
+}
+
+ hr{
+    margin-top: 20px;
+    width: 140vh;
+}
+span{
+    color: var(--maincolor);
+}
+
+@media only screen and (max-width: 1100px){/*harus pake enter setelah and*/
+    body{
+
+    }
+    .menus{
+        display: none;
+    }
+    .navigation{
+        justify-content: left;
+        padding: 0;
+        padding-left: 4%;
+    }
+    header{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .uppertext, .belowtext{
+        font-size: 2rem !important;
+    }
+    .masjidimg{
+        height: 13rem;
+        margin: 30px;
+        filter: brightness(120%);
+    }
+
+    #our-history{
+        width: 100px !important;
+        display: flex;
+        justify-content: center;
+    }
+    .img2{
+        width: 15rem;
+        height: 18rem;
+        margin-top: 50px;
+        filter: brightness(40%);
+        
+    }
+    .line{
+        display: none;
+    }
+    .section-content{
+        position: absolute;
+        right: 1px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        width: 300px;
+        height: 200px;
+        bottom: 30px;
+    }
+    .btn-ourhistory{
+        align-self: center;
+    }
+
+    h1.title{
+        font-size: 34px;
+        left: 200px;
+        top: 50px;
+        position: absolute;
+        left: -150px;
+        text-wrap: nowrap;
+        transform: rotate(-90deg);
+        filter: brightness(70%);
+    }
+
+    #products{
+        margin-top: 11rem !important;
+    }
+    .cards{
+        margin-top: -4rem;
+    }
+    .card{
+        width: 300px;
+        height: 300px;
+        font-size: 20px;
+    }
+    .card-img{
+        width: 40px;
+    }
+
+    .footer-info-container{
+        display: flex;
+        flex-direction: column;
+        transform: translateY(68rem);
+    }
+
+    .footer-paragraf{
+        width: 330px;
+    }
+    .footer-info{
+        margin: 10px auto;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .copyright{
+        transform: translate(-4rem, 73rem);
+        justify-self: left;
+    }
+}
+
